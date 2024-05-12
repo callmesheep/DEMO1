@@ -5,21 +5,13 @@ function Experience() {
     <section className="tc-experience-style1 section-padding-x">
       <div className="container-fluid">
         <div className="row justify-content-between align-items-center">
-          <div className="col-lg-2">
-            <div className="exp-num mb-100 wow zoomIn" data-wow-delay="0.3s">
-              <h5 className="fsz-18 text-uppercase">
-                years of <br /> experience
-              </h5>
-              <h2 className="num"> 15 </h2>
-            </div>
-          </div>
+          
           <div className="col-lg-3">
             <div className="img wow">
-              <img
-                src="/home1/assets/img/exp.png"
-                alt=""
-                className="img-cover"
-              />
+            <div class="video-container">
+
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/BM-Yf-DXhMM" title="They Don&#39;t Know Me Son | David Goggins" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
             </div>
           </div>
           <div className="col-lg-3">
@@ -39,22 +31,13 @@ function Experience() {
                 </span>
               </a>
             </div>
+            
           </div>
-          <div className="col-lg-2">
-            <div className="rotate-txt justify-content-lg-end">
-              <ul>
-                <li>
-                  <a href="#"> hello@archinstudio.co </a>
-                </li>
-                <li>
-                  <a href="#"> (054) 3256 78 87 </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          
+         
         </div>
       </div>
-      <img src="/home1/assets/img/c_line.png" alt="" className="c-line wow" />
+     
     </section>
   );
 }

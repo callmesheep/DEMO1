@@ -1,11 +1,16 @@
 import React from 'react';
-
+import demos from '../../data/main-page/demos';
+import pages from '../../data/main-page/innerpages';
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark tc-navbar-style1 section-padding-x">
+    <nav className="navbar navbar-expand-lg navbar-dark tc-navbar-preview">
       <div className="container-fluid content">
         <a className="navbar-brand" href="#">
-          <img src="/home1/assets/img/logo.png" alt="" className="logo" />
+          <img
+            src="/home_preview/assets/img/logo.png"
+            alt=""
+            className="logo"
+          />
         </a>
         <button
           className="navbar-toggler"
@@ -20,48 +25,121 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Homes
               </a>
+              <ul className="dropdown-menu">
+                {demos.map((item, i) => (
+                  <li key={i}>
+                    <a className="dropdown-item" href={item.link}>
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Studio
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
               </a>
+              <ul className="dropdown-menu">
+                {pages.map((item, i) => (
+                  <li key={i}>
+                    <a className="dropdown-item" href={item.link}>
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Cases
               </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="../innerpages/portfolio.html"
+                  >
+                    page portfolio
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="../innerpages/single_project.html"
+                  >
+                    page single project
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="../innerpages/single_project2.html"
+                  >
+                    page single project 2
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 News
               </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <a className="dropdown-item" href="../innerpages/blog.html">
+                    page blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="../innerpages/single_post.html"
+                  >
+                    page single post
+                  </a>
+                </li>
+              </ul>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Contact
+                shop
               </a>
             </li>
           </ul>
           <div className="nav-side">
-            <a href="#" className="icon ms-3">
-              <span> EN </span>
-            </a>
-            <a href="#" className="icon ms-3">
-              <span> FR </span>
-            </a>
-            <a href="#" className="icon ms-5 fsz-21">
-              <span>
-                <i className="la la-search"></i>{' '}
-              </span>
-            </a>
-            <a href="#" className="icon ms-3 side_menu_btn fsz-21">
-              <span>
-                <i className="la la-grip-lines"></i>{' '}
-              </span>
+            <a
+              href="#"
+              className="butn hover-bg-black text-capitalize bg-orange1 rounded-pill text-white"
+            >
+              <span> Purchase Now </span>
             </a>
           </div>
         </div>

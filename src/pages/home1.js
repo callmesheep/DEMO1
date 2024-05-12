@@ -14,41 +14,64 @@ import Blog from '../components/home1/Blog';
 import Chat from '../components/home1/Chat';
 import Footer from '../components/home1/Footer';
 import { Helmet } from 'react-helmet';
+import Navbar1 from '../components/home1/Navbar';
 
 function Home1() {
-  return (
-    <>
-      <Helmet>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="/home1/assets/css/home_1_style.css"
+    return ( <
+        >
+        <
+        Helmet >
+
+        <
+        link rel = "stylesheet"
+        type = "text/css"
+        href = "/home1/assets/css/home_1_style.css" /
+        >
+        <
+        script src = "/common/assets/js/common_js.js" > < /script> <
+        script src = "/home1/assets/js/home_1_scripts.js" > < /script> <
+        script src = "/home_preview/assets/js/home_preview_scripts.js" > < /script> <
+        /Helmet> <
+        body className = "home-style1" >
+        <
+        Loader / >
+        <
+        Menu / >
+        <
+        div className = "smooth-scroll-content"
+        id = "scrollsmoother-container" >
+        <
+        Navbar / >
+        <
+        Header / >
+        <
+        main >
+        <
+        Experience / >
+        <
+        Services / >
+        <
+        Process / >
+        <
+        Projects / >
+        <
+        Testimonials / >
+        <
+        Awards / >
+        <
+        Team / >
+        <
+        Blog / >
+        <
+        Chat / >
+        <
+        /main> <
+        Footer / >
+        <
+        /div> <
+        /body> <
         />
-        <script src="/common/assets/js/common_js.js"></script>
-        <script src="/home1/assets/js/home_1_scripts.js"></script>
-      </Helmet>
-      <body className="home-style1">
-        <Loader />
-        <Menu />
-        <div className="smooth-scroll-content" id="scrollsmoother-container">
-          <Navbar />
-          <Header />
-          <main>
-            <Experience />
-            <Services />
-            <Process />
-            <Projects />
-            <Testimonials />
-            <Awards />
-            <Team />
-            <Blog />
-            <Chat />
-          </main>
-          <Footer />
-        </div>
-      </body>
-    </>
-  );
+    );
 }
 
 export default Home1;
