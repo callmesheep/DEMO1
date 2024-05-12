@@ -14,7 +14,7 @@ import Blog from '../components/home1/Blog';
 import Chat from '../components/home1/Chat';
 import Footer from '../components/home1/Footer';
 import { Helmet } from 'react-helmet';
-import Navbar1 from '../components/home1/Navbar';
+
 
 function Home1() {
     return ( <

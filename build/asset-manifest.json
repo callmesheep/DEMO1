@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/http//DEMO1.github.io/cart-react/static/css/main.f855e6bc.css",
+    "main.js": "/http//DEMO1.github.io/cart-react/static/js/main.e39d9188.js",
+    "index.html": "/http//DEMO1.github.io/cart-react/index.html",
+    "main.f855e6bc.css.map": "/http//DEMO1.github.io/cart-react/static/css/main.f855e6bc.css.map",
+    "main.e39d9188.js.map": "/http//DEMO1.github.io/cart-react/static/js/main.e39d9188.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.e39d9188.js"
+  ]
+}
